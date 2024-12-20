@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost/nota/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bengkel Raja</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #343a40;
+            padding: 10px 20px;
+        }
+        .navbar h4 {
+            color: #ffc107;
+            margin-right: 20px;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #495057;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 18px;
+            color: #343a40;
+        }
+        .card-text {
+            font-size: 16px;
+            color: #6c757d;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .content {
+                margin-top: 70px; /* Make room for the navbar on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar (Top Bar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <h4>Bengkel Raja</h4>
+        <div class="navbar-nav">
+            <a class="nav-link" href="http://localhost/nota/#">Dashboard</a>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="http://localhost/nota/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Data Management
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://localhost/nota/pelanggan.php">Pelanggan</a></li>
+                    <li><a class="dropdown-item" href="http://localhost/nota/transaksi.php">Transaksi</a></li>
+                    <li><a class="dropdown-item" href="http://localhost/nota/jasa.php">Jasa</a></li>
+                    <li><a class="dropdown-item" href="http://localhost/nota/nota.php">Nota</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Selamat Datang di Dashboard Bengkel Raja</h1>
+        <p>Gunakan menu di atas untuk mengelola data.</p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Pelanggan</h5>
+                        <p class="card-text">Data pelanggan terdaftar: <strong>4</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Transaksi</h5>
+                        <p class="card-text">Total transaksi selesai: <strong>3</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendapatan</h5>
+                        <p class="card-text">Total pendapatan: <strong>Rp. 370.000</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index_files/bootstrap.bundle.min.js.download"></script>
+
+
+</body></html>
